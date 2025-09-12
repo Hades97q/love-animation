@@ -34,7 +34,7 @@ function getHeartPath(t, scale = 1) {
 
 // Animation variables
 let time = 0;
-const trailLength = 50;
+const trailLength = 25;
 const trail1 = [];
 const trail2 = [];
 let angle1 = 0;
@@ -87,11 +87,11 @@ function animate() {
     const centerY = canvas.height / 2;
     
     // Calculate scale for responsive design
-    const heartScale = scale * 10;
+    const heartScale = scale * 15;
     
     // Update angles for rotation
-    angle1 += 0.03;
-    angle2 += 0.03;
+    angle1 += 0.1;
+    angle2 += 0.1;
     
     // Get current positions on heart path
     const pos1 = getHeartPath(angle1, heartScale);
