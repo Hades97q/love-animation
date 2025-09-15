@@ -34,7 +34,7 @@ function getHeartPath(t, scale = 1) {
 
 // Animation variables
 let time = 0;
-const trailLength = 25;
+const trailLength = 20;
 const trail1 = [];
 const trail2 = [];
 let angle1 = 0;
@@ -148,8 +148,8 @@ function animate() {
     drawTrail(trail2, '#ff0080', '#ff00ff');
     
     // Draw leading lights
-    drawLight(centerX + pos1.x, centerY + pos1.y, '#00d4ff', 10);
-    drawLight(centerX + pos2.x, centerY + pos2.y, '#ff0080', 10);
+    drawLight(centerX + pos1.x, centerY + pos1.y, '#00d4ff', 9);
+    drawLight(centerX + pos2.x, centerY + pos2.y, '#ff0080', 9);
     
     // Continue animation
     requestAnimationFrame(animate);
