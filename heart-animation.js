@@ -34,7 +34,7 @@ function getHeartPath(t, scale = 1) {
 
 // Animation variables
 let time = 0;
-const trailLength = 15;
+const trailLength = 17;
 const trail1 = [];
 const trail2 = [];
 let angle1 = 0;
