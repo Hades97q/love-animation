@@ -90,8 +90,8 @@ function animate() {
     const heartScale = scale * 15;
     
     // Update angles for rotation
-    angle1 += 0.1;
-    angle2 += 0.1;
+    angle1 += 0.10;
+    angle2 += 0.10;
     
     // Get current positions on heart path
     const pos1 = getHeartPath(angle1, heartScale);
@@ -148,8 +148,8 @@ function animate() {
     drawTrail(trail2, '#ff0080', '#ff00ff');
     
     // Draw leading lights
-    drawLight(centerX + pos1.x, centerY + pos1.y, '#00d4ff', 15);
-    drawLight(centerX + pos2.x, centerY + pos2.y, '#ff0080', 15);
+    drawLight(centerX + pos1.x, centerY + pos1.y, '#00d4ff', 10);
+    drawLight(centerX + pos2.x, centerY + pos2.y, '#ff0080', 10);
     
     // Continue animation
     requestAnimationFrame(animate);
