@@ -90,8 +90,8 @@ function animate() {
     const heartScale = scale * 15;
     
     // Update angles for rotation
-    angle1 += 0.05;
-    angle2 += 0.05;
+    angle1 += 0.03;
+    angle2 += 0.03;
     
     // Get current positions on heart path
     const pos1 = getHeartPath(angle1, heartScale);
